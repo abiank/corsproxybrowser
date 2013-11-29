@@ -1,46 +1,13 @@
-## Installation
+## Wut?
 
-As a standalone tool:
-
-    $ npm install -g corsproxy
-
-As a dependency:
-
-    $ npm install corsproxy
-
+It's a web browser with a builtin CORS proxy. (running on 0.0.0.0:9000)
 
 ## Running
 
-Standalone:
+    $ YOUR_NW_EXECUTABLE app.nw
 
-    $ corsproxy
-    CORS Proxy started on localhost:9292
+## Credits
 
-Standalone with custom host/port:
-
-    $ corsproxy 0.0.0.0 1234
-    CORS Proxy started on 0.0.0.0:1234
-
-As a dependency:
-
-    var cors_proxy = require("corsproxy");
-    var http_proxy = require("http-proxy");
-    http_proxy.createServer(cors_proxy).listen(1234);
-
-With custom target:
-
-    var cors_proxy = require("corsproxy");
-    var http_proxy = require("http-proxy");
-    cors_proxy.options = {
-         target: "http://0.0.0.0:5984"
-    };
-    http_proxy.createServer(cors_proxy).listen(1234);
+corsproxy & node-webkit
 
 
-## Usage
-
-The cors proxy will start at http://localhost:9292. To access another domain, use the domain name (including port) as the first folder, e.g.
-
-    http://localhost:9292/localhost:3000/sign_in
-    http://localhost:9292/my.domain.com/path/to/resource
-    etc etc
