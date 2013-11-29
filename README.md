@@ -1,6 +1,6 @@
 ## Wut?
 
-It's a web browser with a builtin CORS proxy. (running on 0.0.0.0:9000)
+It's a(n unstable) web browser with a builtin CORS proxy. (running on 0.0.0.0:9000)
 
 ## Running
 
